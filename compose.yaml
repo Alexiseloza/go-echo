@@ -1,0 +1,39 @@
+services:
+  goecho:
+    container_name: goecho
+    image: goecho:1.0.0
+    build:
+     context: ./
+     dockerfile: goecho.dockerfile
+   
+    ports:
+     - "8085:8085"
+   
+
+  
+
+
+ 
+
+  
+
+
+ 
+
+  # db:
+  #   container_name: db
+  #   image: postgres:13
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DB: postgres
+  #   ports:
+  #     - 5432:5432
+  #   volumes:
+  #     - ./db-data:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
+   
+
+     
