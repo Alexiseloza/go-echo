@@ -13,7 +13,15 @@ Additionally, make sure that you have MongoDB installed and running on your loca
 
 I hope this helps! Let me know if you have any further questions.
 
-Complete data in  .ENV 
+Create in root path   .ENV  
+this .env must be  like this:
+--
+PORT=8085
+HOST=localhost
+SECRET_JWT=supersecret
+# MONGO_CONNECT=mongodb+srv://user:password@cluster1.n6yawic.mongodb.net/
+DATABASE_URL=mongodb://localhost:27017/      # docker local
+--
 
 connect you MONGO URL  :"DOCKER " mongodb://localhost:27017/<DATABASE>?ssl=false&auth
 or :  mongodb+srv://USER:PASSWORD@YOUR-CLUSTER.mongodb.net/   
